@@ -26,7 +26,6 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
-        MDTestFramework.hello()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +42,7 @@ class MasterViewController: UITableViewController {
         objects.insert(NSDate(), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
+        MDTestFramework.hello()
     }
 
     // MARK: - Segues
