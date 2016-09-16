@@ -1,0 +1,10 @@
+framework module MDTestFramework {
+  umbrella header "MDTestFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module MDTestFramework.Swift {
+    header "MDTestFramework-Swift.h"
+}

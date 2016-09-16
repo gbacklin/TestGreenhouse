@@ -15,8 +15,8 @@
 		4EEF71871D8BBDFB00CB0045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EEF71851D8BBDFB00CB0045 /* LaunchScreen.storyboard */; };
 		4EEF71921D8BBDFB00CB0045 /* MDTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF71911D8BBDFB00CB0045 /* MDTestTests.swift */; };
 		4EEF719D1D8BBDFB00CB0045 /* MDTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF719C1D8BBDFB00CB0045 /* MDTestUITests.swift */; };
-		4EEF71AD1D8BC27500CB0045 /* MDTestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEF71AB1D8BC26500CB0045 /* MDTestFramework.framework */; };
-		4EEF71AE1D8BC27500CB0045 /* MDTestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEF71AB1D8BC26500CB0045 /* MDTestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4EEF71B31D8BC53600CB0045 /* MDTestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEF71B11D8BC52800CB0045 /* MDTestFramework.framework */; };
+		4EEF71B41D8BC53600CB0045 /* MDTestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEF71B11D8BC52800CB0045 /* MDTestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4EEF71AE1D8BC27500CB0045 /* MDTestFramework.framework in Embed Frameworks */,
+				4EEF71B41D8BC53600CB0045 /* MDTestFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +65,7 @@
 		4EEF71981D8BBDFB00CB0045 /* MDTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEF719C1D8BBDFB00CB0045 /* MDTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDTestUITests.swift; sourceTree = "<group>"; };
 		4EEF719E1D8BBDFB00CB0045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EEF71AB1D8BC26500CB0045 /* MDTestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MDTestFramework.framework; path = ../GreenhouseFramework/MDTestFramework/Frameworks/MDTestFramework.framework; sourceTree = "<group>"; };
+		4EEF71B11D8BC52800CB0045 /* MDTestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MDTestFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EEF71AD1D8BC27500CB0045 /* MDTestFramework.framework in Frameworks */,
+				4EEF71B31D8BC53600CB0045 /* MDTestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,7 @@
 		4EEF71B01D8BC27B00CB0045 /* Embedded Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4EEF71AB1D8BC26500CB0045 /* MDTestFramework.framework */,
+				4EEF71B11D8BC52800CB0045 /* MDTestFramework.framework */,
 			);
 			name = "Embedded Frameworks";
 			sourceTree = "<group>";
@@ -446,6 +446,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8DT5Y3HP4L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MDTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marizack.MDTest;
@@ -459,6 +463,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8DT5Y3HP4L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MDTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marizack.MDTest;
