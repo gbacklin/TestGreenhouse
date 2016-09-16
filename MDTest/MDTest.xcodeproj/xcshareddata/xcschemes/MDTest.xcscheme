@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4EA856891D8BAA04009ABB40"
+               BlueprintIdentifier = "4EEF71761D8BBDFB00CB0045"
                BuildableName = "MDTest.app"
                BlueprintName = "MDTest"
                ReferencedContainer = "container:MDTest.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4EA8569F1D8BAA04009ABB40"
+               BlueprintIdentifier = "4EEF718C1D8BBDFB00CB0045"
                BuildableName = "MDTestTests.xctest"
                BlueprintName = "MDTestTests"
                ReferencedContainer = "container:MDTest.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4EA856AA1D8BAA04009ABB40"
+               BlueprintIdentifier = "4EEF71971D8BBDFB00CB0045"
                BuildableName = "MDTestUITests.xctest"
                BlueprintName = "MDTestUITests"
                ReferencedContainer = "container:MDTest.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4EA856891D8BAA04009ABB40"
+            BlueprintIdentifier = "4EEF71761D8BBDFB00CB0045"
             BuildableName = "MDTest.app"
             BlueprintName = "MDTest"
             ReferencedContainer = "container:MDTest.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4EA856891D8BAA04009ABB40"
+            BlueprintIdentifier = "4EEF71761D8BBDFB00CB0045"
             BuildableName = "MDTest.app"
             BlueprintName = "MDTest"
             ReferencedContainer = "container:MDTest.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4EA856891D8BAA04009ABB40"
+            BlueprintIdentifier = "4EEF71761D8BBDFB00CB0045"
             BuildableName = "MDTest.app"
             BlueprintName = "MDTest"
             ReferencedContainer = "container:MDTest.xcodeproj">
