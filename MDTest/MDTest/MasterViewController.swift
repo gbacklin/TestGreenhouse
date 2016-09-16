@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MDTestFramework
 
 class MasterViewController: UITableViewController {
 
@@ -25,6 +26,7 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        MDTestFramework.hello()
     }
 
     override func viewWillAppear(_ animated: Bool) {
