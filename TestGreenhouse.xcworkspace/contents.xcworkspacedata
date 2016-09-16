@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:GreenhouseFramework/MDTestFramework/MDTestFramework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MDTest/MDTest.xcodeproj">
    </FileRef>
 </Workspace>
