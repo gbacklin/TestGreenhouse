@@ -15,8 +15,7 @@
 		4EEF71871D8BBDFB00CB0045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EEF71851D8BBDFB00CB0045 /* LaunchScreen.storyboard */; };
 		4EEF71921D8BBDFB00CB0045 /* MDTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF71911D8BBDFB00CB0045 /* MDTestTests.swift */; };
 		4EEF719D1D8BBDFB00CB0045 /* MDTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF719C1D8BBDFB00CB0045 /* MDTestUITests.swift */; };
-		4EEF71C61D8BCC0100CB0045 /* MDTestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEF71C51D8BCC0100CB0045 /* MDTestFramework.framework */; };
-		4EEF71C71D8BCDF200CB0045 /* MDTestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEF71C51D8BCC0100CB0045 /* MDTestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4EEF71C91D8BD06600CB0045 /* MDTestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEF71C81D8BD06600CB0045 /* MDTestFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,20 +35,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4EEF71AF1D8BC27500CB0045 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4EEF71C71D8BCDF200CB0045 /* MDTestFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		4EEF71771D8BBDFB00CB0045 /* MDTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEF717A1D8BBDFB00CB0045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +50,7 @@
 		4EEF71981D8BBDFB00CB0045 /* MDTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEF719C1D8BBDFB00CB0045 /* MDTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDTestUITests.swift; sourceTree = "<group>"; };
 		4EEF719E1D8BBDFB00CB0045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EEF71C51D8BCC0100CB0045 /* MDTestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MDTestFramework.framework; path = ../GreenhouseFramework/MDTestFramework/Frameworks/MDTestFramework.framework; sourceTree = "<group>"; };
+		4EEF71C81D8BD06600CB0045 /* MDTestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MDTestFramework.framework; path = ../GreenhouseFramework/MDTestFramework/Frameworks/MDTestFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EEF71C61D8BCC0100CB0045 /* MDTestFramework.framework in Frameworks */,
+				4EEF71C91D8BD06600CB0045 /* MDTestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +135,7 @@
 		4EEF71B01D8BC27B00CB0045 /* Embedded Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4EEF71C51D8BCC0100CB0045 /* MDTestFramework.framework */,
+				4EEF71C81D8BD06600CB0045 /* MDTestFramework.framework */,
 			);
 			name = "Embedded Frameworks";
 			sourceTree = "<group>";
@@ -165,7 +150,6 @@
 				4EEF71731D8BBDFB00CB0045 /* Sources */,
 				4EEF71741D8BBDFB00CB0045 /* Frameworks */,
 				4EEF71751D8BBDFB00CB0045 /* Resources */,
-				4EEF71AF1D8BC27500CB0045 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
