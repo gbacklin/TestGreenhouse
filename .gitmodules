@@ -1,0 +1,3 @@
+[submodule "GreenhouseFramework"]
+	path = GreenhouseFramework
+	url = https://github.com/gbacklin/GreenhouseFramework.git
