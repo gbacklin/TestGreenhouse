@@ -2,7 +2,7 @@
 //  DetailViewController.swift
 //  MDTest
 //
-//  Created by Gene Backlin on 9/15/16.
+//  Created by Gene Backlin on 9/16/16.
 //  Copyright © 2016 Gene Backlin. All rights reserved.
 //
 
@@ -12,13 +12,6 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
-
-    var detailItem: AnyObject? {
-        didSet {
-            // Update the view.
-            self.configureView()
-        }
-    }
 
     func configureView() {
         // Update the user interface for the detail item.
@@ -38,6 +31,13 @@ class DetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    var detailItem: NSDate? {
+        didSet {
+            // Update the view.
+            self.configureView()
+        }
     }
 
 

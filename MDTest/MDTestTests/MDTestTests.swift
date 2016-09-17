@@ -2,7 +2,7 @@
 //  MDTestTests.swift
 //  MDTestTests
 //
-//  Created by Gene Backlin on 9/15/16.
+//  Created by Gene Backlin on 9/16/16.
 //  Copyright © 2016 Gene Backlin. All rights reserved.
 //
 
@@ -28,7 +28,7 @@ class MDTestTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

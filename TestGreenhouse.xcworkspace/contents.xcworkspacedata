@@ -4,4 +4,7 @@
    <FileRef
       location = "group:MDTest/MDTest.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:GreenhouseFramework/MDTestFramework/MDTestFramework.xcodeproj">
+   </FileRef>
 </Workspace>
