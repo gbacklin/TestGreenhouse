@@ -1,8 +1,9 @@
 language: objective-c
 osx_image: xcode8
-xcode_workspace: TestGreenhouse.xcworkspace
-xcode_scheme: Release
-xcode_sdk: iphonesimulator
+script: xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release
+#xcode_workspace: TestGreenhouse.xcworkspace
+#xcode_scheme: Release
+#xcode_sdk: iphonesimulator
 # safelist
 branches:
   only:
