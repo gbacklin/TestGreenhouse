@@ -1,10 +1,10 @@
 language: objective-c
 osx_image: xcode8
-script: 
-  - xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release ONLY_ACTIVE_ARCH=NO
 before_script:
   - chmod a+x ./scripts/add-key.sh
   - sh ./scripts/add-key.sh
+script: 
+  - xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release ONLY_ACTIVE_ARCH=NO
 # safelist
 branches:
   only:
