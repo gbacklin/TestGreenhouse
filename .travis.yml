@@ -1,0 +1,14 @@
+language: objective-c
+osx_image: xcode8
+script: xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release CODE_SIGNING_REQUIRED=NO
+#xcode_workspace: TestGreenhouse.xcworkspace
+#xcode_scheme: Release
+#xcode_sdk: iphonesimulator
+# safelist
+branches:
+  only:
+  - Swift-3.0
+#This sends a slack notificatio to just me, you can configure easily
+notifications:
+  slack: pathfindersoftware:rsq2vyDTwHR6wg54iVIpuH2u
+  
