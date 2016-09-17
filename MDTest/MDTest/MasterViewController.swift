@@ -43,7 +43,7 @@ class MasterViewController: UITableViewController {
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
         
-        // Test Framework
+        // Test Framework Method
         
         MDTestFramework.hello()
     }
