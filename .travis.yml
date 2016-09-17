@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode8
-script: xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release
+script: xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release CODE_SIGNING_REQUIRED=NO
 #xcode_workspace: TestGreenhouse.xcworkspace
 #xcode_scheme: Release
 #xcode_sdk: iphonesimulator
