@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode8
 xcode_project: TestGreenhouse.xcworkspace
 xcode_scheme: Release
-xcode_sdk: iPhone 6s
+#xcode_sdk: iPhone 6s
 # safelist
 branches:
   only:
