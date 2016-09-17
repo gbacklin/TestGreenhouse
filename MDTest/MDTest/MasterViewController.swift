@@ -44,7 +44,6 @@ class MasterViewController: UITableViewController {
         self.tableView.insertRows(at: [indexPath], with: .automatic)
         
         // Test Framework Method
-        
         MDTestFramework.hello()
     }
 
