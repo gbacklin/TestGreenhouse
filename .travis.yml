@@ -12,4 +12,3 @@ branches:
 #This sends a slack notificatio to just me, you can configure easily
 notifications:
   slack: pathfindersoftware:rsq2vyDTwHR6wg54iVIpuH2u
-
