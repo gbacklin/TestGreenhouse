@@ -6,13 +6,64 @@
 //  Copyright © 2016 Gene Backlin. All rights reserved.
 //
 
+/***************************************************
+ **           Code Signing with Travis            **
+ ***************************************************
+ **
+ ** http://stackoverflow.com/questions/27671854/travis-ci-fails-to-build-with-a-code-signing-error
+ **
+ ***************************************************
+
+.travis.yml
+ 
+ language: objective-c
+ osx_image: xcode8
+ script:
+ - xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release ONLY_ACTIVE_ARCH=NO
+ before_script:
+ - chmod a+x ./scripts/add-key.sh
+ - sh ./scripts/add-key.sh
+ # safelist
+ branches:
+ only:
+ - Swift-3.0
+ #This sends a slack notificatio to just me, you can configure easily
+ notifications:
+ slack: pathfindersoftware:rsq2vyDTwHR6wg54iVIpuH2u
+
+ ***************************************************
+ 
+ add-key.sh:
+ 
+ #!/bin/sh
+ # Create a custom keychain
+ security create-keychain -p travis ios-build.keychain
+ 
+ # Make the custom keychain default, so xcodebuild will use it for signing
+ security default-keychain -s ios-build.keychain
+ 
+ # Unlock the keychain
+ security unlock-keychain -p travis ios-build.keychain
+ 
+ # Set keychain timeout to 1 hour for long builds
+ # see http://www.egeek.me/2013/02/23/jenkins-and-xcode-user-interaction-is-not-allowed/
+ security set-keychain-settings -t 3600 -l ~/Library/Keychains/ios-build.keychain
+ 
+ # Add certificates to keychain and allow codesign to access them
+ security import ./scripts/certs/DeveloperCertificates.p12 -k ~/Library/Keychains/ios-build.keychain -P Password123 -T /usr/bin/codesign
+ 
+ # Put the provisioning profile in place
+ mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+ cp "./scripts/profile/MDTest_Dev_Prov_Profile.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
+
+ *************************************************/
+
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -56,6 +107,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
         return false
     }
-
 }
 
