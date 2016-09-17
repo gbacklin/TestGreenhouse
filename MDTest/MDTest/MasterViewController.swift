@@ -42,6 +42,7 @@ class MasterViewController: UITableViewController {
         objects.insert(NSDate(), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
+        // Test Framework
         MDTestFramework.hello()
     }
 
