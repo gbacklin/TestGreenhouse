@@ -8,3 +8,7 @@ script: xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release
 branches:
   only:
   - Swift-3.0
+#This sends a slack notificatio to just me, you can configure easily
+notifications:
+  slack: pathfindersoftware:rsq2vyDTwHR6wg54iVIpuH2u
+  
