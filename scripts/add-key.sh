@@ -18,5 +18,5 @@ security import ./scripts/certs/DistributionCertificates.p12 -k ~/Library/Keycha
 
 # Put the provisioning profile in place
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-cp "./scripts/profile/MDTest_Dev_Prov_Profile.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
-cp "./scripts/profile/MDTest_Ad_Hoc_Dist_Profile.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
+cp "./scripts/profile/MDTest_Dev_Prov_Prof.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
+cp "./scripts/profile/MDTest_AdHoc_Prov_Profile.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
