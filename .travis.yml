@@ -1,9 +1,10 @@
 language: objective-c
 osx_image: xcode8
-script: xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release CODE_SIGNING_REQUIRED=NO
-#xcode_workspace: TestGreenhouse.xcworkspace
-#xcode_scheme: Release
-#xcode_sdk: iphonesimulator
+script: 
+  - xcodebuild -workspace TestGreenhouse.xcworkspace -scheme Release ONLY_ACTIVE_ARCH=NO
+before_script:
+  - chmod a+x ./scripts/add-key.sh
+  - sh ./scripts/add-key.sh
 # safelist
 branches:
   only:
@@ -11,4 +12,3 @@ branches:
 #This sends a slack notificatio to just me, you can configure easily
 notifications:
   slack: pathfindersoftware:rsq2vyDTwHR6wg54iVIpuH2u
-  
